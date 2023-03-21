@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="app wrapper">
       <header>
-        <h1>farts</h1>
+        <h1>jobi</h1>
       </header>
       <main>
         <div className='firebase-test'>
