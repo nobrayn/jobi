@@ -1,2 +1,20 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+@font-face {
+  font-family: "EB Garamond";
+  src: local("EB Garamond Regular"),
+  url(../fonts/EBGaramond-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gordita" ;
+  src: local("Gordita Regular"),
+  url(../fonts/Gordita-Regular.otf);
+  font-weight: normal;
+}
+
+body {
+  font-family: $ff-gordita;
+}

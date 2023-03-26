@@ -1,0 +1,39 @@
+.accordion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-heading h4 {
+  margin: 0;
+}
+
+.accordion-heading .accordion-toggle {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.accordion-heading .accordion-toggle.collapsed {
+  background-image: url(../assets/dropdown-arrow-up.png);
+}
+
+.accordion-heading .accordion-toggle:not(.collapsed) {
+  background-image: url(../assets/dropdown-arrow-down.png);
+}
+
+// animation for accordion (not working)
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.active + .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in;
+}

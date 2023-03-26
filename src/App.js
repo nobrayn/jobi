@@ -11,8 +11,11 @@ import JobList from "./Pages/JobList";
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
 
+// fonts
+import "./fonts/EBGaramond-VariableFont_wght.ttf"
+import "./fonts/Gordita-Regular.otf"
+
 // CSS
-import "./index.scss";
 import './App.scss';
 
 const App = () => {
@@ -20,7 +23,6 @@ const App = () => {
     <div className="app wrapper">
       <header>
         <NavBar />
-        <h1>jobi</h1>
       </header>
       <main>
         <Routes>
