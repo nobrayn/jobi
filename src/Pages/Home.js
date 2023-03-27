@@ -35,7 +35,7 @@ const Home = () => {
             <button>Search</button>
           </div>
           <div className="home-circles">
-            <img src={iconCircles} alt="" />
+            <img src={iconCircles} alt="circles" />
             <div className="circles-right">
               <p className="paragraph-bold">18k+</p>
               <p>Individual Freelancers</p>
@@ -48,32 +48,32 @@ const Home = () => {
           <h2>Most Demanding Categories.</h2>
           <div>
             <a href="#">Explore All Fields</a>
-            <a href="#"><img src={arrowRight} alt="" /></a>
+            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
           </div>
         </div>
         <div className="categories">
           <div className="category-button">
-            <a href="#"><img src={iconPen} alt="" /></a>
+            <a href="#"><img src={iconPen} alt="pen icon" /></a>
             <a href="#">UI/UX Design</a>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconCode} alt="" /></a>
+            <a href="#"><img src={iconCode} alt="code icon" /></a>
             <a href="#">Development</a>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconBriefcase} alt="" /></a>
+            <a href="#"><img src={iconBriefcase} alt="briefcase icon" /></a>
             <a href="#">Marketing</a>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconPhone} alt="" /></a>
+            <a href="#"><img src={iconPhone} alt="phone icon" /></a>
             <a href="#">Telemarketing</a>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconBank} alt="" /></a>
+            <a href="#"><img src={iconBank} alt="bank building icon" /></a>
             <a href="#">Accounting</a>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconSettings} alt="" /></a>
+            <a href="#"><img src={iconSettings} alt="settings icon" /></a>
             <a href="#">Editing</a>
           </div>
         </div>
@@ -81,9 +81,9 @@ const Home = () => {
       <section id="how-it-works">
         <div className="hiw-heading">
           {/* replace these with border tops?? */}
-          <img src={line} alt="" />
+          <img src={line} alt="horizontal line" />
           <h2>How's it work?</h2>
-          <img src={line} alt="" />
+          <img src={line} alt="horizontal line" />
         </div>
         <div className="one-two-three">
           <div className="one-two-three-box">
@@ -108,7 +108,7 @@ const Home = () => {
       </section>
       <section id="find-top-talents">
         <div className="top-talents-left">
-          <a href=""><img src={topTalents} alt="" /></a>
+          <a href=""><img src={topTalents} alt="screenshot of webpage with three job seekers listed" /></a>
         </div>
         <div className="top-talents-right">
           <h2>Find top talents from jobi.</h2>
@@ -124,34 +124,34 @@ const Home = () => {
           <h2>Top Experts</h2>
           <div>
             <a href="#">Explore All</a>
-            <a href="#"><img src={arrowRight} alt="" /></a>
+            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
           </div>
         </div>
         <div className="experts">
           <div className="expert">
             <div className="expert-image-container">
-              <img src="https://loremflickr.com/200/200/man?random=1" alt="placeholder image of a person" />
+              <img src="https://loremflickr.com/200/200/man?random=1" alt="placeholder of a person" />
             </div>
             <p><strong>Billy Blinkers</strong></p>
             <p>Horse Whisperer</p>
           </div>
           <div className="expert">
             <div className="expert-image-container">
-              <img src="https://loremflickr.com/200/200/karate?random=2" alt="placeholder image of a person" />
+              <img src="https://loremflickr.com/200/200/karate?random=2" alt="placeholder of a person" />
             </div>
             <p><strong>Candice Crackercorn</strong></p>
             <p>Kickboxer</p>
           </div>
           <div className="expert">
             <div className="expert-image-container">
-              <img src="https://loremflickr.com/200/200/comedian?random=3" alt="placeholder image of a person" />
+              <img src="https://loremflickr.com/200/200/comedian?random=3" alt="placeholder of a person" />
             </div>
             <p><strong>Björn Smith</strong></p>
             <p>Stand-up Comedian</p>
           </div>
           <div className="expert">
             <div className="expert-image-container">
-              <img src="https://loremflickr.com/200/200/child?random=1" alt="placeholder image of a person" />
+              <img src="https://loremflickr.com/200/200/child?random=1" alt="placeholder of a person" />
             </div>
             <p><strong>Dr. Martha Boop</strong></p>
             <p>Actual Doctor</p>
@@ -161,7 +161,7 @@ const Home = () => {
       <section id="feedback">
         <div className="feedback-box-left">
           <div className="inner-box-left">
-            <img src={beginQuote} alt="" />
+            <img src={beginQuote} alt="quotation marks" />
             {/* this has to be a carousel */}
             <h3>"The best service I've ever received from Jobi, and highly recommended.</h3>
           </div>
@@ -173,12 +173,12 @@ const Home = () => {
         <div className="feedback-lower">
           <p>TRUSTED BY <span className="green-text">500+ </span>COMPANIES</p>
           <div className="company-logos">
-            <img src={logoGoogle} alt="" />
-            <img src={logoDiscord} alt="" />
-            <img src={logoDribbble} alt="" />
-            <img src={logoWalmart} alt="" />
-            <img src={logoVine} alt="" />
-            <img src={logoAirbnb} alt="" />
+            <img src={logoGoogle} alt="google logo" />
+            <img src={logoDiscord} alt="discord logo" />
+            <img src={logoDribbble} alt="dribbble logo" />
+            <img src={logoWalmart} alt="walmart logo" />
+            <img src={logoVine} alt="vine logo" />
+            <img src={logoAirbnb} alt="airbnb logo" />
           </div>
         </div>
       </section>
@@ -186,14 +186,14 @@ const Home = () => {
         <div>
           <h2>Jobi Guides</h2>
           <div>
-            <a href="#">Explore More</a>
-            <a href="#"><img src={arrowRight} alt="" /></a>
+            <a href="foo">Explore More</a>
+            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
           </div>
         </div>
         <div className="guides-container">
           <div className="guides-left">
             <div className="guides-image">
-              <img src="https://loremflickr.com/340/200/layouts?random=1" alt="placeholder image" />
+              <img src="https://loremflickr.com/340/200/layouts?random=1" alt="placeholder" />
               <p className="guides-image-btn">SOLUTION</p>
             </div>
             <div className="guides-text">
@@ -204,7 +204,7 @@ const Home = () => {
           </div>
           <div className="guides-right">
             <div className="guides-image">
-              <img src="https://loremflickr.com/340/200/userexperience?random=1" alt="placeholder image" />
+              <img src="https://loremflickr.com/340/200/userexperience?random=1" alt="placeholder" />
               <p className="guides-image-btn">DESIGN</p>
             </div>
             <div className="guides-text">
@@ -225,7 +225,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bottom-banner-right">
-          <img src="https://loremflickr.com/200/200/job?random=1" alt="placeholder image" />
+          <img src="https://loremflickr.com/200/200/job?random=1" alt="placeholder" />
           <img src={drawnEffect} alt="emphasis lines" />
         </div>
       </section>

@@ -5,35 +5,36 @@ import firebase from "../Components/Firebase";
 
 const JobList = () => {
 
-  // Testing Firebase below. Receiving data. Hooray!
   // Need to fix "Warning: Each child in a list should have a unique "key" prop."
-  const [test, setTest] = useState([]);
+  // define state
+  const [jobs, setJobs] = useState([]);
   useEffect(() => {
     // create a variable that holds our database details
     const database = getDatabase(firebase)
     // we then create a variable that makes reference to our database
-    const dbRef = ref(database)
+    const dbRef = ref(database, "/jobs")
     onValue(dbRef, (response) => {
       const newState = [];
-      // here we store the response from our query to Firebase inside of a variable called data.
-      // .val() is a Firebase method that gets us the information we want
+      // store the response from our query to Firebase inside of a variable called data.
+      // .val() is a Firebase method to parse our database info the way we want it
       const data = response.val();
       for (let key in data) {
         newState.push(data[key]);
-        setTest(newState)
       }
-      // here we use Firebase's .val() method to parse our database info the way we want it
+      setJobs(newState)
       console.log(response.val());
     })
   }, [])
   return (
-    <div className='firebase-test'>
+    <div className="job-list">
+      <h2>Hey, a jobs list.</h2>
       <ul>
-        {test.map((test) => {
+        {jobs.map((job, index) => {
+          console.log(job)
           return (
-            <li key={test.id}>
-              <p>This is a Job List</p>
-              <p>{test}</p>
+            <li key={index}>
+              <p>{job.title}</p>
+              <p>{job.employer}</p>
             </li>
           )
         })}
