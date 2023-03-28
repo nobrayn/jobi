@@ -1,5 +1,6 @@
 // components
 import Accordion from "../Components/Accordion";
+import { Link } from "react-router-dom";
 
 // assets
 import iconCircles from "../assets/icon-circles.png";
@@ -26,7 +27,7 @@ import drawnEffect from "../assets/effect-1.png"
 const Home = () => {
   return (
     <>
-      <section id="home-top">
+      <section className="home" id="home-top">
         <div className="home-left">
           <h1>Home time</h1>
           <p>With the largest professional creative community online, simply search through our website.</p>
@@ -47,34 +48,34 @@ const Home = () => {
         <div>
           <h2>Most Demanding Categories.</h2>
           <div>
-            <a href="#">Explore All Fields</a>
-            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
+            <Link to="#">Explore All Fields</Link>
+            <Link to="#"><img src={arrowRight} alt="arrow pointing right" /></Link>
           </div>
         </div>
         <div className="categories">
           <div className="category-button">
-            <a href="#"><img src={iconPen} alt="pen icon" /></a>
-            <a href="#">UI/UX Design</a>
+            <Link to="#"><img src={iconPen} alt="pen icon" /></Link>
+            <Link to="#">UI/UX Design</Link>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconCode} alt="code icon" /></a>
-            <a href="#">Development</a>
+            <Link to="#"><img src={iconCode} alt="code icon" /></Link>
+            <Link to="#">Development</Link>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconBriefcase} alt="briefcase icon" /></a>
-            <a href="#">Marketing</a>
+            <Link to="#"><img src={iconBriefcase} alt="briefcase icon" /></Link>
+            <Link to="#">Marketing</Link>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconPhone} alt="phone icon" /></a>
-            <a href="#">Telemarketing</a>
+            <Link to="#"><img src={iconPhone} alt="phone icon" /></Link>
+            <Link to="#">Telemarketing</Link>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconBank} alt="bank building icon" /></a>
-            <a href="#">Accounting</a>
+            <Link to="#"><img src={iconBank} alt="bank building icon" /></Link>
+            <Link to="#">Accounting</Link>
           </div>
           <div className="category-button">
-            <a href="#"><img src={iconSettings} alt="settings icon" /></a>
-            <a href="#">Editing</a>
+            <Link to="#"><img src={iconSettings} alt="settings icon" /></Link>
+            <Link to="#">Editing</Link>
           </div>
         </div>
       </section>
@@ -108,7 +109,7 @@ const Home = () => {
       </section>
       <section id="find-top-talents">
         <div className="top-talents-left">
-          <a href=""><img src={topTalents} alt="screenshot of webpage with three job seekers listed" /></a>
+          <Link to=""><img src={topTalents} alt="screenshot of webpage with three job seekers listed" /></Link>
         </div>
         <div className="top-talents-right">
           <h2>Find top talents from jobi.</h2>
@@ -123,8 +124,8 @@ const Home = () => {
         <div>
           <h2>Top Experts</h2>
           <div>
-            <a href="#">Explore All</a>
-            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
+            <Link to="#">Explore All</Link>
+            <Link to="#"><img src={arrowRight} alt="arrow pointing right" /></Link>
           </div>
         </div>
         <div className="experts">
@@ -186,8 +187,8 @@ const Home = () => {
         <div>
           <h2>Jobi Guides</h2>
           <div>
-            <a href="foo">Explore More</a>
-            <a href="#"><img src={arrowRight} alt="arrow pointing right" /></a>
+            <Link to="foo">Explore More</Link>
+            <Link to="#"><img src={arrowRight} alt="arrow pointing right" /></Link>
           </div>
         </div>
         <div className="guides-container">
@@ -199,7 +200,7 @@ const Home = () => {
             <div className="guides-text">
               <p><span className="bold">Featured - </span>18 Jul 2018</p>
               <h4>Print, publishing qui visual quis layout mockups.</h4>
-              <a href="#">Continue Reading <img src={arrowRightBig} alt="arrow pointing right" /></a>
+              <Link to="#">Continue Reading <img src={arrowRightBig} alt="arrow pointing right" /></Link>
             </div>
           </div>
           <div className="guides-right">
@@ -210,7 +211,7 @@ const Home = () => {
             <div className="guides-text">
               <p>16 Jul 2018</p>
               <h4>Designer's Checklist for Every UX/UI Project.</h4>
-              <a href="#">Continue Reading <img src={arrowRightBig} alt="arrow pointing right" /></a>
+              <Link to="#">Continue Reading <img src={arrowRightBig} alt="arrow pointing right" /></Link>
             </div>
           </div>
         </div>
