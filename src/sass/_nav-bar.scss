@@ -1,12 +1,83 @@
-nav {
+@use "./variables" as *;
+@use "./mixins" as *;
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $bg-nav;
+  min-height: 120px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  a {
+    color: $white;
+  }
 }
 
 nav ul {
   display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
   li {
-    margin: 0 5px 5px 0;
+    min-height: 24px;
+    padding: 5px 10px;
+    img {
+      padding: 0px 5px;
+    }
   }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.category-btn {
+  background-color: rgba(164, 225, 154, 0.222);
+  width: fit-content;
+  border-radius: 20px;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    background-color: rgba(164, 225, 154, 0.422);
+    a {
+      color: $black;
+    }
+  }
+  a {
+    padding: 5px 10px;
+    color: $lime-green;
+  }
+}
+
+.talents-btn {
+  background-color: $lime-green;
+  width: fit-content;
+  border-radius: 20px;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    background-color: rgba(164, 225, 154, 0.422);
+    a {
+      color: $white;
+    }
+  }
+  a {
+    padding: 7px 10px;
+    color: $black;
+  }
+}
+
+.login-btn a {
+  color: $lime-green;
 }

@@ -8,11 +8,16 @@
   padding: 0;
 }
 
-.wrapper {
-  max-width: 85%;
-  max-width: 1200px;
-  margin: 0 auto;
+// countering the 120px min-height of fixed nav
+main {
+  padding-top: 120px;
 }
+
+// .wrapper {
+//   max-width: 85%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
 
 img {
   height: auto;

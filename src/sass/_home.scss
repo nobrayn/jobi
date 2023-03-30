@@ -1,6 +1,38 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+.home-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 150px;
+  h1 {
+    width: 220px;
+  }
+}
+
+.home-circles {
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 110px;
+    margin-right: 15px;
+  }
+}
+
+.circles-right {
+  p {
+    &:first-of-type {
+      margin-bottom: 2px;
+    }
+  }
+}
+
 // find top talents / accordion section
 .find-top-talents {
   display: flex;

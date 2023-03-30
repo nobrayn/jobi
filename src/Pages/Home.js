@@ -28,22 +28,25 @@ const Home = () => {
   return (
     <>
       <section className="home" id="home-top">
-        <div className="home-left">
-          <h1>Home time</h1>
-          <p>With the largest professional creative community online, simply search through our website.</p>
-          <div className="home-search">
-            <input type="text" name="home-search" id="home-search" />
-            <button>Search</button>
-          </div>
-          <div className="home-circles">
-            <img src={iconCircles} alt="circles" />
-            <div className="circles-right">
-              <p className="paragraph-bold">18k+</p>
-              <p>Individual Freelancers</p>
+        <div className="home-top">
+          <div className="home-left">
+            <h1>Find your job without any hassle.</h1>
+            <p>With the largest professional creative community online, simply search through our website.</p>
+            <div className="home-search">
+              <input type="text" name="home-search" id="home-search" />
+              <button>Search</button>
+            </div>
+            <div className="home-circles">
+              <img src={iconCircles} alt="circles" />
+              <div className="circles-right">
+                <p><strong>18k+</strong></p>
+                <p>Individual Freelancers</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="home-right">
+          <div className="home-right">
+            <img src="https://loremflickr.com/600/700/office" alt="placeholder"></img>
+          </div>
         </div>
         <div>
           <h2>Most Demanding Categories.</h2>
