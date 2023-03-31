@@ -6,18 +6,72 @@
 * {
   margin: 0;
   padding: 0;
+  color: $black;
 }
 
-// countering the 120px min-height of fixed nav
-main {
-  padding-top: 120px;
+h1 {
+  font-size: $fs-xl;
 }
 
-// .wrapper {
-//   max-width: 85%;
-//   max-width: 1200px;
-//   margin: 0 auto;
+// for all pages but home
+// h1 {
+//   font-family: $ff-garamond;
+//   font-size: $fs-3xl;
 // }
+
+h2 {
+  font-size: $fs-lrg;
+}
+
+h3 {
+  font-size: $fs-med;
+}
+
+h4 {
+  font-size: $fs-small;
+}
+
+h5 {
+  font-size: $fs-small;
+}
+
+p,
+a,
+input,
+button {
+  font-size: $fs-2xs;
+}
+
+footer a,
+h5 {
+  font-size: $fs-xs;
+}
+
+// nav-specific sizes
+.nav ul li a {
+  font-size: $fs-3xs;
+}
+
+// countering the 100px min-height of fixed nav
+main {
+  padding-top: 100px;
+}
+
+// default margin between sections
+section {
+  margin-top: 150px;
+}
+
+// except for home-top
+.home {
+  margin-top: 0px;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 img {
   height: auto;
@@ -31,4 +85,33 @@ a,
 button {
   display: inline-block;
   text-decoration: none;
+}
+
+
+.search-btn,
+.apply-btn {
+  input {
+    border: none;
+    background-color: $light-grey;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px;
+    margin-right: 20px;
+  }
+  button {
+    background-color: $bright-green;
+    color: $white;
+    border: 3px solid transparent;
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+      border: 3px solid $bright-green;
+      background-color: $white;
+      color: $bright-green;
+    }
+  }
 }

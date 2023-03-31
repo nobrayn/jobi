@@ -1,5 +1,6 @@
 // components
 import Accordion from "../Components/Accordion";
+import NewJobListing from "../Components/NewJobListings";
 import { Link } from "react-router-dom";
 
 // assets
@@ -26,14 +27,14 @@ import drawnEffect from "../assets/effect-1.png"
 
 const Home = () => {
   return (
-    <>
+    <div className="wrapper">
       <section className="home" id="home-top">
         <div className="home-top">
           <div className="home-left">
             <h1>Find your job without any hassle.</h1>
             <p>With the largest professional creative community online, simply search through our website.</p>
-            <div className="home-search">
-              <input type="text" name="home-search" id="home-search" />
+            <div className="search-btn">
+              <input type="text" name="home-search" id="home-search" placeholder="Search job, title, etc..." />
               <button>Search</button>
             </div>
             <div className="home-circles">
@@ -45,14 +46,20 @@ const Home = () => {
             </div>
           </div>
           <div className="home-right">
-            <img src="https://loremflickr.com/600/700/office" alt="placeholder"></img>
+            <img src="https://loremflickr.com/550/650/business" alt="placeholder"></img>
           </div>
         </div>
-        <div>
-          <h2>Most Demanding Categories.</h2>
-          <div>
-            <Link to="#">Explore All Fields</Link>
-            <Link to="#"><img src={arrowRight} alt="arrow pointing right" /></Link>
+      </section>
+      <section id="demanding-categories">
+        <div className="demanding-categories">
+          <div className="demanding-categories-top">
+            <div>
+              <h4>Most Demanding Categories.</h4>
+            </div>
+            <div className="what-am-i-doing">
+              <Link to="#">Explore All Fields</Link>
+              <Link to="#"><img src={arrowRight} alt="arrow pointing right" /></Link>
+            </div>
           </div>
         </div>
         <div className="categories">
@@ -84,31 +91,52 @@ const Home = () => {
       </section>
       <section id="how-it-works">
         <div className="hiw-heading">
-          {/* replace these with border tops?? */}
-          <img src={line} alt="horizontal line" />
+          <div className="line">
+          </div>
           <h2>How's it work?</h2>
-          <img src={line} alt="horizontal line" />
+          <div className="line">
+          </div>
         </div>
         <div className="one-two-three">
           <div className="one-two-three-box">
             <p className="green-box">01</p>
-            <h4>Create Account</h4>
+            <h5>Create Account</h5>
             <p>It's very easy to open an account and start your journey.</p>
           </div>
           <div className="one-two-three-box">
             <p className="green-box">02</p>
-            <h4>Complete your profile</h4>
+            <h5>Complete your profile</h5>
             <p>Complete your profile with all the info to get your client's attention.</p>
           </div>
           <div className="one-two-three-box">
             <p className="green-box">03</p>
-            <h4>Apply for job or hire</h4>
-            <p>Apply & set your preferred job requirements and get it</p>
+            <h5>Apply for job or hire</h5>
+            <p>Apply & set your preferred job requirements and get it!</p>
           </div>
         </div>
       </section>
-      <section id="new-job-listing">
-        {/* need to set firebase data structure up here first */}
+      <section className="test" id="new-job-listings">
+        <div className="new-job-listings-header">
+          <h3>New Job Listing</h3>
+          <ul className="new-job-listings-header-menu">
+            <li>
+              <Link to="#">All Categories</Link>
+            </li>
+            <li>
+              <Link to="#">Design</Link>
+            </li>
+            <li>
+              <Link to="#">Developer</Link>
+            </li>
+            <li>
+              <Link to="#">Marketing</Link>
+            </li>
+            <li>
+              <Link to="#">Business</Link>
+            </li>
+          </ul>
+        </div>
+        <NewJobListing />
       </section>
       <section id="find-top-talents">
         <div className="top-talents-left">
@@ -233,7 +261,7 @@ const Home = () => {
           <img src={drawnEffect} alt="emphasis lines" />
         </div>
       </section>
-    </>
+    </div>
   )
 }
 

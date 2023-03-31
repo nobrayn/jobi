@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="nav-container">
         <div className="nav nav-left">
           <ul>
-            <li>
+            <li className="jobi-logo">
               <Link to="/"><img src={jobiLogoWhiteText} alt="jobi logo"></img></Link>
             </li>
             <li className="category-btn">

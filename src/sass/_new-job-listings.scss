@@ -1,0 +1,56 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.new-job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.new-job-list-tile {
+  flex-basis: calc(33.3333% - 10px);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-job-list-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-job-list-upper-l {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: $grey;
+  border-radius: 50%;
+}
+
+.new-job-list-upper-r {
+  margin-left: auto;
+}
+
+.new-job-list-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contract-type-btn {
+  background-color: $light-grey;
+  color: $bright-green;
+  padding: 5px;
+}
+
+.new-job-list-lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.test {
+  width: 140%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+
+}
