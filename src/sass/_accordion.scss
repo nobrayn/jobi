@@ -1,7 +1,12 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
 .accordion-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: $fs-xs;
+  margin-top: 30px;
 }
 
 .accordion-heading h4 {
@@ -25,12 +30,23 @@
   background-image: url(../assets/dropdown-arrow-down.png);
 }
 
+.accordion-heading span,
+.accordion-heading span {
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    filter: invert(30%) hue-rotate(0deg) brightness(1.5);
+  }
+}
+
 // animation for accordion (not working)
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  font-size: $fs-2xs;
+  margin: 30px 0;
 }
 
 .active + .accordion-content {

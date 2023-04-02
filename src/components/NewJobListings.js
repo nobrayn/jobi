@@ -30,37 +30,34 @@ const NewJobListing = () => {
     })
   }, [])
   return (
-    <div>
-      <div className="new-job-list">
-        {jobs.map((job, index) => {
-          // console.log(job)
-          return (
-            <div className="new-job-list-tile" key={index}>
-              <div className="new-job-list-upper">
-                <div className="new-job-list-upper-l">
-                </div>
-                <div className="new-job-list-upper-r">
-                  <a href="#"><img src={buttonBookmark} alt="bookmark" /></a>
-                </div>
+    <div className="wrapper new-job-list">
+      {jobs.map((job, index) => {
+        // console.log(job)
+        return (
+          <div className="new-job-list-tile" key={index}>
+            <div className="new-job-list-upper">
+              <div className="new-job-list-upper-l">
               </div>
-              <div className="new-job-list-mid">
-                <p className='contract-type-btn'>{job.contractType}</p>
-                <h4>{job.title}</h4>
-                <p>{job.date}</p>            
-              </div>
-              <div className="new-job-list-lower">
-                <div className="new-job-list-lower-l">
-                  <p>{job.location.country}, {job.location.city}</p>
-                  <p>{job.contractType}</p>
-                </div>
-                <div className="apply-btn">
-                  <Link to="/jobDetails">APPLY</Link>
-                </div>
+              <div className="new-job-list-upper-r">
+                <a href="#"><img src={buttonBookmark} alt="bookmark" /></a>
               </div>
             </div>
-          );
-        })}
-      </div>
+            <div className="new-job-list-mid">
+              <p className="contract-type-btn">{job.contractType}</p>
+              <h5>{job.title}</h5>
+              <p className="contract-date">{job.date}</p>
+            </div>
+            <div className="new-job-list-lower">
+              <div className="new-job-list-lower-l">
+                <p>{job.location.country}, {job.location.city}</p>
+              </div>
+              <div className="apply-btn">
+                <Link to="/jobDetails">APPLY</Link>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   )
 };

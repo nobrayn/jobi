@@ -1,17 +1,31 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+// full-bleed background colour for this section
+.new-job-listings {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: $bg;
+  padding-top: 100px;
+}
+
 .new-job-list {
   display: flex;
+  margin-top: 100px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .new-job-list-tile {
-  flex-basis: calc(33.3333% - 10px);
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  flex-basis: calc(33.3333% - 20px);
+  margin-bottom: 30px;
+  background-color: $white;
+  border-radius: 12px;
+  padding: 10px 30px 10px 30px;
+  aspect-ratio: 1 / 1;
 }
 
 .new-job-list-upper {
@@ -23,23 +37,37 @@
   min-width: 50px;
   min-height: 50px;
   background-color: $grey;
-  border-radius: 50%;
 }
 
 .new-job-list-upper-r {
   margin-left: auto;
 }
 
+.new-job-list-upper-r img {
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    filter: invert(100%) hue-rotate(90deg) brightness(1.5);
+  }
+}
+
 .new-job-list-mid {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .contract-date {
+    font-size: $fs-3xs;
+    color: $grey;
+    margin-top: 16px;
+  }
 }
 
 .contract-type-btn {
-  background-color: $light-grey;
+  background-color: $bg;
+  margin-bottom: 20px;
   color: $bright-green;
-  padding: 5px;
+  width: fit-content;
+  padding: 6px 15px 3px 5px;
 }
 
 .new-job-list-lower {
@@ -47,10 +75,28 @@
   justify-content: space-between;
 }
 
-.test {
-  width: 140%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: red;
+.apply-btn {
+  background-color: $bright-green;
+  border: 3px solid transparent;
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  &:hover,
+  &:focus {
+    border: 3px solid $bright-green;
+    background-color: $white;
+    a {
+      color: $black;
+    }
+  }
+
+  a {
+    color: $white;
+    margin-top: 5px;
+  }
 }

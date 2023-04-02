@@ -52,17 +52,25 @@
 }
 
 // demanding-categories
-.demanding-categories-top {
+.demanding-categories-top,
+.top-experts-top {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.what-am-i-doing {
-  align-self: center;
+.explore-link {
+  align-self: flex-end;
   a {
     color: $bright-green;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    transition: 0.2s;
+  }
+  a:hover,
+  a:focus {
     border-bottom: 2px solid $bright-green;
+    padding-bottom: 8px;
   }
   > :first-child {
     padding-right: 50px;
@@ -93,6 +101,10 @@
   }
 }
 // how-it-works
+.how-it-works {
+  margin-bottom: 100px;
+}
+
 .hiw-heading {
   display: flex;
   align-items: center;
@@ -148,12 +160,27 @@
 .new-job-listings-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .new-job-listings-header-menu {
   display: flex;
+  li a {
+    margin-right: 20px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+    transition: 0.2s;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+  li a:hover,
+  li a:focus {
+    border-bottom: 3px solid $bright-green;
+    padding-bottom: 8px;
+    color: $bright-green;
+  }
 }
-
 
 // find-top-talents / accordion
 .find-top-talents {
@@ -168,11 +195,15 @@
     height: auto;
   }
 }
+.top-talents-right {
+  margin-left: 40px;
+}
 
 // top-experts
 .experts {
   display: flex;
   position: relative;
+  justify-content: space-between;
   z-index: 5;
 }
 
@@ -200,7 +231,44 @@
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 
+.break {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.break::before,
+.break::after {
+  content: '';
+  flex-grow: 1;
+  border-top: 1px solid $grey;
+  height: 0;
+}
+
+.break::before {
+  margin-right: 10px;
+}
+
+.break::after {
+  margin-left: 10px;
+}
+
+.break img {
+  margin: 0 10px;
+}
+
 // feedback
+.feedback-upper {
+  display: flex;
+}
+
+.feedback-box-left {
+  background-color: $bright-green;
+  h3 {
+    color: $white;
+  }
+}
+
 
 // guides
 
