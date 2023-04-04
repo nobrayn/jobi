@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 // assets
 import jobiLogoGreenBlackText from "../assets/logo-jobi-green-with-text-black.png";
-import lineGreen from "../assets/line-green.png"
-import logoFacebook from "../assets/logo-facebook.svg"
-import logoLinkedin from "../assets/logo-linkedin.svg"
-import logoTwitter from "../assets/logo-twitter.svg"
-import logoPinterest from "../assets/logo-pinterest.svg"
-import logoInstagram from "../assets/logo-instagram.svg"
+import lineGreen from "../assets/line-green.png";
+import logoFacebook from "../assets/logo-facebook.svg";
+import logoLinkedin from "../assets/logo-linkedin.svg";
+import logoTwitter from "../assets/logo-twitter.svg";
+import logoPinterest from "../assets/logo-pinterest.svg";
+import logoInstagram from "../assets/logo-instagram.svg";
 
 
 const Footer = () => {

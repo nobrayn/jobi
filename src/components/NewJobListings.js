@@ -5,7 +5,7 @@ import { getDatabase, ref, onValue } from 'firebase/database';
 import firebase from "../Components/Firebase";
 
 // assets
-import buttonBookmark from "../assets/btn-bookmark.png"
+import buttonBookmark from "../assets/btn-bookmark.png";
 
 
 const NewJobListing = () => {

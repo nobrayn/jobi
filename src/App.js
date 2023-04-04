@@ -13,8 +13,8 @@ import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 
 // fonts
-import "./fonts/EBGaramond-VariableFont_wght.ttf"
-import "./fonts/Gordita-Regular.otf"
+import "./fonts/EBGaramond-VariableFont_wght.ttf";
+import "./fonts/Gordita-Regular.otf";
 
 // CSS
 import './App.scss';

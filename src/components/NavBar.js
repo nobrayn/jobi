@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 // assets
 import jobiLogoWhiteText from "../assets/logo-jobi-with-text-white.png";
-import effectZigzag from "../assets/effect-zigzag.png"
-import categoryBtn from "../assets/btn-category.png"
+import effectZigzag from "../assets/effect-zigzag.png";
+import categoryBtn from "../assets/btn-category.png";
 
 const NavBar = () => {
   return (
