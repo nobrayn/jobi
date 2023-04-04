@@ -1,2 +1,29 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+
+  a:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  img.logo-pinterest {
+    margin-left: auto;
+  }
+}

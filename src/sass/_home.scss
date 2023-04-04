@@ -1,7 +1,188 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-// find top talents / accordion section
+// home-top
+.home-top {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: stretch;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 0 50px;
+  max-width: 60%;
+  position: relative;
+  > p {
+    margin-bottom: 50px;
+  }
+}
+
+.home-right {
+  max-width: 50%;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.home-circles {
+  display: flex;
+  align-items: center;
+  margin-top: 61px;
+  img {
+    max-width: 110px;
+    margin-right: 15px;
+  }
+}
+
+.circles-right {
+  p {
+    &:first-of-type {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+// demanding-categories
+.demanding-categories-top,
+.top-experts-top {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore-link {
+  align-self: flex-end;
+  a {
+    color: $bright-green;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    transition: 0.2s;
+  }
+  a:hover,
+  a:focus {
+    border-bottom: 2px solid $bright-green;
+    padding-bottom: 8px;
+  }
+  > :first-child {
+    padding-right: 50px;
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .category-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    padding: 12px 18px;
+    background: $light-grey;
+    transition: 0.2s;
+    :first-child img {
+      margin-right: 5px;
+    }
+  }
+  .category-button:hover,
+  .category-button:focus {
+    border: 2px solid $green;
+    background-color: $white;
+  }
+}
+// how-it-works
+.how-it-works {
+  margin-bottom: 100px;
+}
+
+.hiw-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.line {
+  flex-basis: 33.3333%;
+  height: 1px;
+  background-color: $light-grey;
+}
+
+.hiw-heading h2 {
+  flex-basis: 66.6666%;
+  margin: 0;
+  text-align: center;
+}
+
+.one-two-three {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.one-two-three-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  text-align: center;
+  margin: 20px;
+  h5 {
+    margin-bottom: 30px;
+  }
+  p {
+    line-height: 2;
+  }
+}
+
+.green-box {
+  background-color: $bright-green;
+  color: $white;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  margin: 40px 0;
+  padding: 10px;
+}
+
+// new-job-listings
+.new-job-listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.new-job-listings-header-menu {
+  display: flex;
+  li a {
+    margin-right: 20px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+    transition: 0.2s;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+  li a:hover,
+  li a:focus {
+    border-bottom: 3px solid $bright-green;
+    padding-bottom: 8px;
+    color: $bright-green;
+  }
+}
+
+// find-top-talents / accordion
 .find-top-talents {
   display: flex;
 }
@@ -14,17 +195,23 @@
     height: auto;
   }
 }
+.top-talents-right {
+  margin-left: 40px;
+}
 
-// top experts section
+// top-experts
 .experts {
   display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 5;
 }
 
 .expert {
   margin: 0 8px;
 }
 
-// dog-ear effect 
+// dog-ear effect
 .expert-image-container {
   display: inline-block;
   position: relative;
@@ -32,7 +219,7 @@
 }
 
 .expert-image-container::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -43,3 +230,46 @@
   border-color: transparent transparent #fff transparent;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
+
+.break {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.break::before,
+.break::after {
+  content: '';
+  flex-grow: 1;
+  border-top: 1px solid $grey;
+  height: 0;
+}
+
+.break::before {
+  margin-right: 10px;
+}
+
+.break::after {
+  margin-left: 10px;
+}
+
+.break img {
+  margin: 0 10px;
+}
+
+// feedback
+.feedback-upper {
+  display: flex;
+}
+
+.feedback-box-left {
+  background-color: $bright-green;
+  h3 {
+    color: $white;
+  }
+}
+
+
+// guides
+
+// bottom-banner

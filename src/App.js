@@ -21,21 +21,21 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div className="app wrapper">
+    <div className="app">
       <header>
         <NavBar />
       </header>
       <main>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/jobDetails" element={<JobDetails />} />
-        <Route path="/jobList" element={<JobList />} />
-        <Route path="/backendTemp" element={<BackendTemp />} />
-        <Route path="/*" element={<ErrorPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/jobDetails" element={<JobDetails />} />
+          <Route path="/jobList" element={<JobList />} />
+          <Route path="/backendTemp" element={<BackendTemp />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </main>
       <Footer />
-    </div>  
+    </div>
   )
 };
 

@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="footer-bottom-right">
           <a href="#"><img className="logo-facebook" src={logoFacebook} alt="facebook logo" /></a>
           <a href="#"><img className="logo-instagram" src={logoInstagram} alt="instagram logo" /></a>
-          <a href=""><img className="logo-pinterest" src={logoPinterest} alt="pinterest logo" /></a>
+          <a href="#"><img className="logo-pinterest" src={logoPinterest} alt="pinterest logo" /></a>
         </div>
       </div>
     </footer>
