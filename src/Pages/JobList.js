@@ -48,7 +48,7 @@ const JobList = () => {
                   </div>
                 </div>
                 <div className="job-list-upper-r">
-                  <a href=""><img src={buttonBookmark} alt="bookmark" /></a>
+                  <Link to="#"><img src={buttonBookmark} alt="bookmark" /></Link>
                 </div>
               </div>
               <div className="job-list-mid">
