@@ -17,58 +17,58 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-left">
           <Link to="/"><img src={jobiLogoGreenBlackText} alt="jobi logo"></img></Link>
-          <a className="jobi-email" href="mailto:jobisupport@company.com">jobisupport@company.com</a>
+          <Link className="jobi-email" href="mailto:jobisupport@company.com">jobisupport@company.com</Link>
           <img src={lineGreen} alt="divider" />
           <div className="social-icons">
-            <a href="#"><img className="logo-facebook" src={logoFacebook} alt="facebook logo" /></a>
-            <a href="#"><img className="logo-twitter" src={logoTwitter} alt="twitter logo" /></a>
-            <a href=""><img className="logo-linkedin" src={logoLinkedin} alt="linkedin logo" /></a>
+            <Link to="#"><img className="logo-facebook" src={logoFacebook} alt="facebook logo" /></Link>
+            <Link to="#"><img className="logo-twitter" src={logoTwitter} alt="twitter logo" /></Link>
+            <Link to=""><img className="logo-linkedin" src={logoLinkedin} alt="linkedin logo" /></Link>
           </div>
         </div>
         <div className="footer-right">
           <div className="footer-col-one">
             <ul>
               <li><h5>Links</h5></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><Link to="#">Pricing</Link></li>
+              <li><Link to="#">About Us</Link></li>
+              <li><Link to="#">Careers</Link></li>
+              <li><Link to="#">Blog</Link></li>
             </ul>
           </div>
           <div className="footer-col-two">
             <ul>
               <li><h5>Products</h5></li>
-              <li><a href="#">Take the tour</a></li>
-              <li><a href="#">Live chat</a></li>
-              <li><a href="#">Self-service</a></li>
-              <li><a href="#">Mobile</a></li>
-              <li><a href="#">Collaboration</a></li>
-              <li><a href="#">Reviews</a></li>
+              <li><Link to="#">Take the tour</Link></li>
+              <li><Link to="#">Live chat</Link></li>
+              <li><Link to="#">Self-service</Link></li>
+              <li><Link to="#">Mobile</Link></li>
+              <li><Link to="#">Collaboration</Link></li>
+              <li><Link to="#">Reviews</Link></li>
             </ul>
           </div>
           <div className="footer-col-three">
             <ul>
               <li><h5>Legal</h5></li>
-              <li><a href="#">Terms of use</a></li>
-              <li><a href="#">Terms & conditions</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookie policy</a></li>
+              <li><Link to="#">Terms of use</Link></li>
+              <li><Link to="#">Terms & conditions</Link></li>
+              <li><Link to="#">Privacy</Link></li>
+              <li><Link to="#">Cookie policy</Link></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <a href="#"><p><strong>Privacy & Terms</strong></p></a>
-          <a href="#"><p><strong>Contact Us</strong></p></a>
+          <Link to="#"><p><strong>Privacy & Terms</strong></p></Link>
+          <Link to="#"><p><strong>Contact Us</strong></p></Link>
         </div>
         <div className="footer-bottom-ctr">
           <p>Copyright ©2023 jobi inc. </p>
         </div>
         <div className="footer-bottom-right">
-          <a href="#"><img className="logo-facebook" src={logoFacebook} alt="facebook logo" /></a>
-          <a href="#"><img className="logo-instagram" src={logoInstagram} alt="instagram logo" /></a>
-          <a href="#"><img className="logo-pinterest" src={logoPinterest} alt="pinterest logo" /></a>
+          <Link to="#"><img className="logo-facebook" src={logoFacebook} alt="facebook logo" /></Link>
+          <Link to="#"><img className="logo-instagram" src={logoInstagram} alt="instagram logo" /></Link>
+          <Link to="#"><img className="logo-pinterest" src={logoPinterest} alt="pinterest logo" /></Link>
         </div>
       </div>
     </footer>
