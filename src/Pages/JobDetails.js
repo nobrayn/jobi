@@ -27,7 +27,7 @@ const JobDetails = () => {
     })
   }, [])
   return (
-    <div className="firebase-test">
+    <div className="job-details">
       <ul>
         {job.map((job) => {
           return (

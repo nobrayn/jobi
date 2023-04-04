@@ -7,9 +7,20 @@ const Accordion = (props) => {
     setIsActive(!isActive);
   }
 
+  // when hovered, pressing enter will expand accordion
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      setIsActive(!isActive);
+    }
+  }
+
   return (
     <>
-      <h4 className={`accordion-heading ${isActive ? "active" : ""}`} onClick={handleClick}>
+      <h4 className={`accordion-heading ${isActive ? "active" : ""}`}
+        onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        tabIndex="0"
+      >
         {props.heading}
         <span className={`accordion-toggle ${isActive ? "collapsed" : ""}`}></span>
       </h4>

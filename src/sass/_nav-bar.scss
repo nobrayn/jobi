@@ -1,12 +1,95 @@
-nav {
+@use "./variables" as *;
+@use "./mixins" as *;
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: $bg-nav;
+  min-height: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
-ul {
-  display: flex;
-  li {
-    margin: 0 5px 5px 0;
+nav {
+  display: block;
+  width: 100%;
+  a {
+    color: $white;
   }
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  li {
+    // min-height: 24px;
+    min-width: fit-content;
+    padding: 7px 10px 3px 10px;
+    margin-top: 4px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.jobi-logo {
+  margin-bottom: 4px;
+}
+
+.category-btn {
+  background-color: rgba(164, 225, 154, 0.222);
+  width: fit-content;
+  border-radius: 20px;
+  transition: 0.3s;
+  margin: 0 10px 3px 0;
+  &:hover,
+  &:focus {
+    background-color: rgba(164, 225, 154, 0.422);
+    a {
+      color: $black;
+    }
+  }
+  a {
+    padding: 0 0 2px 0;
+    color: $lime-green;
+  }
+  img {
+    width: 14px;
+    padding: 0px 2px;
+    margin-right: 3px;
+  }
+}
+
+.talents-btn {
+  background-color: $lime-green;
+  width: fit-content;
+  border-radius: 20px;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    background-color: rgba(164, 225, 154, 0.422);
+    a {
+      color: $white;
+    }
+  }
+  a {
+    padding: 3px 3px;
+    color: $black;
+  }
+}
+
+.login-btn ::before {
+  content: " | ";
+  color: $grey;
+  margin-right: 10px;
 }
