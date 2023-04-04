@@ -10,7 +10,7 @@ import BackendTemp from "./Pages/BackendTemp";
 
 // components
 // import NavBar from "./Components/NavBar";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 // fonts
 import "./fonts/EBGaramond-VariableFont_wght.ttf";
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 };
