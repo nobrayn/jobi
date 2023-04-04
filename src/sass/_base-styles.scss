@@ -6,8 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-  // remove this
-  text-align: center;
 }
 
 .wrapper {
@@ -18,5 +16,14 @@
 
 img {
   height: auto;
-  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
 }

@@ -1,2 +1,45 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+// find top talents / accordion section
+.find-top-talents {
+  display: flex;
+}
+
+.top-talents-left,
+.top-talents-right {
+  flex-basis: 50%;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// top experts section
+.experts {
+  display: flex;
+}
+
+.expert {
+  margin: 0 8px;
+}
+
+// dog-ear effect 
+.expert-image-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.expert-image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent #fff transparent;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}

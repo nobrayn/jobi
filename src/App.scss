@@ -1,11 +1,12 @@
 @use './sass/setup';
 @use './sass/variables';
+@use './sass/typography';
 @use './sass/mixins';
 @use './sass/home';
 @use './sass/footer';
 @use './sass/nav-bar';
 @use './sass/base-styles';
-@use './sass/typography';
+@use './sass/accordion';
 @use './sass/hamburger';
 @use './sass/media-queries';
 @use './sass/error';
