@@ -9,7 +9,7 @@ import JobList from "./Pages/JobList";
 import BackendTemp from "./Pages/BackendTemp";
 
 // components
-import NavBar from "./Components/NavBar";
+// import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 
 // fonts
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        <NavBar />
+        {/* <NavBar /> */}
       </header>
       <main>
         <Routes>
