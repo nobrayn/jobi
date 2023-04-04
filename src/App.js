@@ -9,8 +9,8 @@ import JobList from "./Pages/JobList";
 import BackendTemp from "./Pages/BackendTemp";
 
 // components
-// import NavBar from "./Components/NavBar";
-// import Footer from "./Components/Footer";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 
 // fonts
 import "./fonts/EBGaramond-VariableFont_wght.ttf";
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        {/* <NavBar /> */}
+        <NavBar />
       </header>
       <main>
         <Routes>
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 };
