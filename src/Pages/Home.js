@@ -15,19 +15,19 @@ import iconBriefcase from "../assets/icon-briefcase.png";
 import iconPhone from "../assets/icon-phone.png";
 import iconBank from "../assets/icon-bank.png";
 import iconSettings from "../assets/icon-settings.png";
-import line from "../assets/line.png"
-import dots from "../assets/slider-buttons.png"
-import topTalents from "../assets/effect-circle-full.png"
-import beginQuote from "../assets/icon-begin-quote.png"
-import logoGoogle from "../assets/logo-google.png"
-import logoDiscord from "../assets/logo-discord.png"
-import logoDribbble from "../assets/logo-dribbble.png"
-import logoWalmart from "../assets/logo-walmart.png"
-import logoVine from "../assets/logo-vine.png"
-import logoAirbnb from "../assets/logo-airbnb.png"
-import arrowRightBig from "../assets/btn-arrow-continue-reading.png"
-import arrowDrawn from "../assets/effect-arrow.png"
-import drawnEffect from "../assets/effect-1.png"
+import line from "../assets/line.png";
+import dots from "../assets/slider-buttons.png";
+import topTalents from "../assets/effect-circle-full.png";
+import beginQuote from "../assets/icon-begin-quote.png";
+import logoGoogle from "../assets/logo-google.png";
+import logoDiscord from "../assets/logo-discord.png";
+import logoDribbble from "../assets/logo-dribbble.png";
+import logoWalmart from "../assets/logo-walmart.png";
+import logoVine from "../assets/logo-vine.png";
+import logoAirbnb from "../assets/logo-airbnb.png";
+import arrowRightBig from "../assets/btn-arrow-continue-reading.png";
+import arrowDrawn from "../assets/effect-arrow.png";
+import drawnEffect from "../assets/effect-1.png";
 
 const Home = () => {
 

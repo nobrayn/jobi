@@ -9,12 +9,12 @@ import JobList from "./Pages/JobList";
 import BackendTemp from "./Pages/BackendTemp";
 
 // components
-import NavBar from "./Components/NavBar";
+// import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 
 // fonts
-import "./fonts/EBGaramond-VariableFont_wght.ttf"
-import "./fonts/Gordita-Regular.otf"
+import "./fonts/EBGaramond-VariableFont_wght.ttf";
+import "./fonts/Gordita-Regular.otf";
 
 // CSS
 import './App.scss';
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        <NavBar />
+        {/* <NavBar /> */}
       </header>
       <main>
         <Routes>
