@@ -28,6 +28,8 @@ import logoAirbnb from "../assets/logo-airbnb.png";
 import arrowRightBig from "../assets/btn-arrow-continue-reading.png";
 import arrowDrawn from "../assets/effect-arrow.png";
 import drawnEffect from "../assets/effect-1.png";
+import arrowSquareLeft from "../assets/btn-arrow-square-left.png";
+import arrowSquareRight from "../assets/btn-arrow-square-right.png";
 
 const Home = () => {
 
@@ -216,10 +218,19 @@ const Home = () => {
             <div className="feedback-box-left">
               <div className="inner-box-left">
                 <img src={beginQuote} alt="quotation marks" />
-                {/* this has to be a carousel */}
-                <h3>"The best service I've ever received from Jobi, and highly recommended.</h3>
+                {/* this has to be a carousel eventually */}
+                <h4>"The best service I've ever received from Jobi, and highly recommended.</h4>
+                <p><strong>Zubayer Al Hasan</strong>, Dhaka</p>
               </div>
               {/* where do the arrows go?! */}
+              <div className="square-arrows">
+                <div className="arrow-square-left">
+                  <img src={arrowSquareLeft} alt="left arrow" />
+                </div>
+                <div className="arrow-square-right">
+                  <img src={arrowSquareRight} alt="right arrow" />
+                </div>
+              </div>
             </div>
             <div className="feedback-box-right">
               {/* carousel!? */}

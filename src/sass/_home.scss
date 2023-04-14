@@ -239,7 +239,7 @@
 
 .break::before,
 .break::after {
-  content: '';
+  content: "";
   flex-grow: 1;
   border-top: 1px solid $grey;
   height: 0;
@@ -264,11 +264,29 @@
 
 .feedback-box-left {
   background-color: $bright-green;
-  h3 {
+  width: 700px;
+  height: 550px;
+  padding: 90px;
+  h4 {
+    color: $white;
+    line-height: 60px;
+  }
+  p,
+  strong {
     color: $white;
   }
 }
 
+.square-arrows {
+  display: flex;
+}
+.arrow-square-left {
+  margin-left: -90px;
+}
+
+.arrow-square-right {
+  
+}
 
 // guides
 

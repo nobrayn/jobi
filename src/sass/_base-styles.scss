@@ -57,7 +57,7 @@ main {
   padding-top: 100px;
 }
 
-// except for home-top
+// ...except for home-top
 .home {
   margin-top: 0px;
 }
@@ -113,4 +113,8 @@ button {
       color: $bright-green;
     }
   }
+}
+
+.green-text {
+  color: $bright-green;
 }
